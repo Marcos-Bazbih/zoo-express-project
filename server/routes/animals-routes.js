@@ -6,4 +6,5 @@ animalsRoutes.get("/:id", GetAnimalById);
 animalsRoutes.post("/", AddAnimal);
 animalsRoutes.put("/:id", UpdateAnimal)
 animalsRoutes.delete("/:id", DeleteAnimal);
+
 module.exports = animalsRoutes; 
