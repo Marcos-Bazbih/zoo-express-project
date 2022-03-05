@@ -18,7 +18,7 @@ app.use(cors());
 
 app.listen(port, () => { console.log(`connected to port ${port}`) });
 
-app.get("/", (req, res) => res.send("<h1>Welcome to mu zoo</h1>"))
+app.get("/", (req, res) => res.send("<h1>Welcome to my zoo</h1>"))
 
 
 app.use(passport.initialize());
