@@ -18,6 +18,9 @@ app.use(cors());
 
 app.listen(port, () => { console.log(`connected to port ${port}`) });
 
+app.get("/", (req, res) => res.send("<h1>Welcome to mu zoo</h1>"))
+
+
 app.use(passport.initialize());
 app.use("/animals", passport.authenticate('jwt', { session: false }), animalsRoutes);
 app.use("/employees", passport.authenticate('jwt', { session: false }), employeesRoutes);
